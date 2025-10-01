@@ -1,6 +1,6 @@
 nota = int(input("introduzca su nota"))
 match nota:
-  case 1 | 2 | 3 | 4 :
+  case 0 | 1 | 2 | 3 | 4 :
        print(nota ," es un Insuficiente")
   case 5:
        print(nota ," es un Suficiente")
