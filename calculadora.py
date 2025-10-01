@@ -14,6 +14,12 @@ elif op == ("mult"):
     mult = x * y
     print("El resultado es ",mult)
 
+elif op ==("div"):
+    if y == 0:
+        print("No se puede dividir entre 0")
+    else:
+        div = x / y
+        print("El resultado es ",div)
+    
 else:
-    div = x / y
-    print("El resultado es ",div)
+    print("Ha ocurrido un error")
