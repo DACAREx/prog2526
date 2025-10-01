@@ -10,14 +10,14 @@ elif op == ("resta"):
     resta = x - y
     print("El resultado es ",resta)
 
-elif op == ("mult") or ("multiplicacion"):
+elif op == ("mult") or op == ("multiplicacion"):
     mult = x * y
     print("El resultado es ",mult)
 
-elif op ==("div") or ("division"):
-    if y == 0:
+elif op == ("div") or op == ("division"):
+     if y == 0:
         print("No se puede dividir entre 0")
-    else:
+     else:
         div = x / y
         print("El resultado es ",div)
     
