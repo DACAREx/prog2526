@@ -1,5 +1,5 @@
-x = int(input("Introduce el primer numero "))
-y = int(input("Introduce el segundo numero "))
+x = float(input("Introduce el primer numero "))
+y = float(input("Introduce el segundo numero "))
 op = input("Introducza la operacion que quiera realizar (suma,resta,mult o div) ")
 
 if op == ("suma"):
