@@ -1,6 +1,7 @@
 N = int(input("Introduce un numero "))
+x = 0
 if N > 0:
-        for x in range (N):
+        while x < N:
            x = x + 1
            print(x, end=', ')
 else:
