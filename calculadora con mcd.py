@@ -1,6 +1,6 @@
 x = float(input("Introduce el primer numero "))
 y = float(input("Introduce el segundo numero "))
-op = input("Introducza la operacion que quiera realizar (suma,resta,mult o div) ")
+op = input("Introducza la operacion que quiera realizar (suma,resta,mult,mcd o div) ")
 
 if op == ("suma"):
     suma = x + y
@@ -20,6 +20,15 @@ elif op == ("div") or op == ("division"):
      else:
         div = x / y
         print("El resultado es ",div)
-    
+elif op == ("mcd"):
+    while (x != 0) and (y != 0):
+        if x > y:
+            x = x - y
+        else:
+            y = y - x
+            mcd = x if x != 0 else y
+
+            print("El resultado es ", mcd)
+      
 else:
     print("Ha ocurrido un error (prueba a escribir bien la operacion)")
