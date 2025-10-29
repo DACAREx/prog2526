@@ -293,4 +293,25 @@ footer p {
 .back-link a:hover {
   text-decoration: underline;
 }
+/* ====== SOBRE MÍ ====== */
+.about-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+}
 
