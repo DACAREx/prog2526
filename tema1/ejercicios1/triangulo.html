@@ -2,49 +2,87 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Triangulo.py | Ejercicio</title>
+  <title>Triángulo | Ejercicio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <!-- CSS -->
   <link href="../style.css" rel="stylesheet">
   <link href="../exercise.css" rel="stylesheet">
+
+  <style>
+    /* ====== GALERÍA LADO A LADO ====== */
+    .exercise-gallery {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap; /* para que en móviles se acomoden verticalmente */
+      margin-bottom: 20px;
+    }
+
+    .exercise-gallery img {
+      width: 48%; /* dos imágenes lado a lado con espacio */
+      max-width: 1000px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      display: block;
+    }
+
+    /* En móviles, que ocupen todo el ancho */
+    @media (max-width: 768px) {
+      .exercise-gallery img {
+        width: 100%;
+      }
+    }
+
+    /* ====== BOTÓN VOLVER MEJORADO ====== */
+    .back-link a {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff5722, #ff9800);
+      color: #fff;
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-align: center;
+      margin: 30px auto;
+      font-size: 1.1rem;
+    }
+
+    .back-link a:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    .back-link {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="container header-container">
       <div class="logo">
-        <h1>Ejercicio: Triángulo.py</h1>
-        <p>Visualiza el enunciado, la solución y descarga el código</p>
+        <h1>Ejercicio: triangulo.py</h1>
       </div>
-      <nav>
-        <ul>
-          <li><a href="../tema1.html">Volver a Tema 1</a></li>
-          <li><a href="../../index.html">Inicio</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
   <!-- Contenido principal -->
   <main class="exercise-detail">
     <div class="container">
-      <h2>Ejercicio: Triangulo.py</h2>
-
       <div class="exercise-gallery">
-        <div class="exercise-image">
-          <h3>🧩 Enunciado / Ejercicio</h3>
-          <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema1/capturas/triangulo.png" 
-               alt="Captura del enunciado del ejercicio Triangulo.py">
-        </div>
-        <div class="exercise-image">
-          <h3>✅ Solución</h3>
-          <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema1/capturas/triangulo_solucion.png" 
-               alt="Captura de la solución del ejercicio Triangulo.py">
-        </div>
+        <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema1/capturas/triangulo.png" 
+             alt="Captura del ejercicio">
+        <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema1/capturas/triangulo_solucion.png" 
+             alt="Solución del ejercicio">
       </div>
 
       <a href="../scripts1/triangulo.py" download class="btn download-btn">⬇ Descargar código</a>
+
       <p class="back-link"><a href="../tema1.html">⬅ Volver al Tema 1</a></p>
     </div>
   </main>
