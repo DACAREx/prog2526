@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>nombre.py | Ejercicio</title>
+  <title>Nombre | Ejercicio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <!-- CSS -->
@@ -16,12 +16,12 @@
       justify-content: space-between;
       align-items: flex-start;
       gap: 20px;
-      flex-wrap: wrap; /* para móviles */
+      flex-wrap: wrap; /* para que en móviles se acomoden verticalmente */
       margin-bottom: 20px;
     }
 
     .exercise-gallery img {
-      width: 48%;
+      width: 48%; /* dos imágenes lado a lado con espacio */
       max-width: 1000px;
       height: auto;
       border-radius: 10px;
@@ -29,13 +29,14 @@
       display: block;
     }
 
+    /* En móviles, que ocupen todo el ancho */
     @media (max-width: 768px) {
       .exercise-gallery img {
         width: 100%;
       }
     }
 
-    /* ====== BOTÓN VOLVER ====== */
+    /* ====== BOTÓN VOLVER MEJORADO ====== */
     .back-link a {
       display: inline-block;
       background: linear-gradient(135deg, #ff5722, #ff9800);
@@ -74,19 +75,14 @@
   <main class="exercise-detail">
     <div class="container">
       <div class="exercise-gallery">
-        <!-- Imagen del enunciado -->
-        <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema1/capturas/nombre_enunciado.png" 
-             alt="Enunciado del ejercicio">
-
-        <!-- Imagen de la solución -->
+        <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema1/capturas/nombre.png" 
+             alt="Captura del ejercicio">
         <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema1/capturas/nombre_solucion.png" 
              alt="Solución del ejercicio">
       </div>
 
-      <!-- Botón de descarga -->
       <a href="../scripts1/nombre.py" download class="btn download-btn">⬇ Descargar código</a>
 
-      <!-- Botón de volver -->
       <p class="back-link"><a href="../tema1.html">⬅ Volver al Tema 1</a></p>
     </div>
   </main>
