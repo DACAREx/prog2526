@@ -1,64 +1,45 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ano_bisiesto.py | Ejercicio</title>
+  <title>Año Bisiesto.py | Ejercicio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <!-- CSS -->
+  <!-- CSS externo -->
   <link href="../style.css" rel="stylesheet">
   <link href="../exercise.css" rel="stylesheet">
-</head>
-<body>
 
- <style>
+  <style>
     /* ====== GALERÍA LADO A LADO ====== */
     .exercise-gallery {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
       gap: 20px;
       flex-wrap: wrap;
       margin-bottom: 20px;
     }
 
-    .exercise-gallery img {
-      width: 48%;
+    .exercise-image {
+      flex: 1 1 48%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .exercise-image img {
+      width: 100%;
       max-width: 1000px;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
       display: block;
+      margin-top: 10px;
     }
 
+    /* En móviles, que ocupen todo el ancho */
     @media (max-width: 768px) {
-      .exercise-gallery img {
-        width: 100%;
+      .exercise-image {
+        flex: 1 1 100%;
       }
-    }
-
-    /* ====== BOTÓN VOLVER MEJORADO ====== */
-    .back-link a {
-      display: inline-block;
-      background: linear-gradient(135deg, #2196f3, #03a9f4);
-      color: #fff;
-      padding: 15px 40px;
-      border-radius: 50px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      text-align: center;
-      margin: 30px auto;
-      font-size: 1.1rem;
-    }
-
-    .back-link a:hover {
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    }
-
-    .back-link {
-      text-align: center;
     }
 
     /* ====== BOTÓN DESCARGA ====== */
@@ -82,6 +63,30 @@
       transform: translateY(-3px) scale(1.05);
       box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     }
+
+    /* ====== BOTÓN VOLVER ====== */
+    .back-link a {
+      display: inline-block;
+      background: linear-gradient(135deg, #2196f3, #03a9f4);
+      color: #fff;
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-align: center;
+      margin: 30px auto;
+      font-size: 1.1rem;
+    }
+
+    .back-link a:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    .back-link {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -104,22 +109,22 @@
   <!-- Contenido principal -->
   <main class="exercise-detail">
     <div class="container">
-      <h2>Ejercicio: Ano_bisiesto.py</h2>
+      <h2>Ejercicio: Año Bisiesto.py</h2>
 
       <div class="exercise-gallery">
         <div class="exercise-image">
           <h3>🧩 Enunciado / Ejercicio</h3>
           <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema1/capturas/ano_bisiesto.png" 
-               alt="Captura del enunciado del ejercicio Ano_bisiesto.py">
+               alt="Captura del enunciado del ejercicio Año Bisiesto.py">
         </div>
         <div class="exercise-image">
           <h3>✅ Solución</h3>
           <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema1/capturas/ano_bisiesto_solucion.png" 
-               alt="Captura de la solución del ejercicio Ano_bisiesto.py">
+               alt="Captura de la solución del ejercicio Año Bisiesto.py">
         </div>
       </div>
 
-      <a href="../scripts1/ano_bisiesto.py" download class="btn download-btn">⬇ Descargar código</a>
+      <a href="../scripts1/ano_bisiesto.py" download class="download-btn">⬇ Descargar código</a>
       <p class="back-link"><a href="../tema1.html">⬅ Volver al Tema 1</a></p>
     </div>
   </main>
