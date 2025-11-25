@@ -2,98 +2,103 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Lista de Errores | Prog2526</title>
+  <title>Error List Index | Ejercicio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSS -->
   <link href="../style.css" rel="stylesheet">
+  <link href="../exercise.css" rel="stylesheet">
 
   <style>
-    /* ====== Lista en dos columnas ====== */
-    .error-list {
+    /* ====== GALERÍA LADO A LADO ====== */
+    .exercise-gallery {
       display: flex;
-      gap: 40px;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
       flex-wrap: wrap;
+      margin-bottom: 20px;
     }
 
-    .error-column {
-      flex: 1;
-      min-width: 250px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .error-column a {
+    .exercise-gallery img {
+      width: 48%;
+      max-width: 1000px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
       display: block;
-      padding: 8px 12px;
-      background-color: #f0f0f0;
-      border-radius: 5px;
-      text-decoration: none;
-      color: #333;
-      transition: all 0.2s ease;
     }
 
-    .error-column a:hover {
-      background-color: #ff5722;
+    @media (max-width: 768px) {
+      .exercise-gallery img {
+        width: 100%;
+      }
+    }
+
+    /* ====== BOTÓN VOLVER ====== */
+    .back-link a {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff5722, #ff9800);
       color: #fff;
-      transform: translateX(5px);
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-align: center;
+      margin: 30px auto;
+      font-size: 1.1rem;
+    }
+
+    .back-link a:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    .back-link {
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
+
   <!-- Header -->
   <header>
     <div class="container header-container">
       <div class="logo">
-        <h1>Errores</h1>
-        <p>Listado de errores comunes en Python</p>
+        <h1>Ejercicio: error_list_index.py</h1>
       </div>
-
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../sobre_mi.html">Sobre mí</a></li>
-          <li><a href="../contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
-  <!-- Lista -->
-  <section class="blog">
+  <!-- Contenido principal -->
+  <main class="exercise-detail">
     <div class="container">
-      <h2>Errores Comunes</h2>
 
-      <div class="error-list">
-
-        <!-- Columna izquierda -->
-        <div class="error-column">
-          <a href="errores/syntax_error.html">SyntaxError</a>
-          <a href="errores/type_error.html">TypeError</a>
-          <a href="errores/value_error.html">ValueError</a>
-          <a href="errores/index_error.html">IndexError</a>
-        </div>
-
-        <!-- Columna derecha -->
-        <div class="error-column">
-          <a href="errores/key_error.html">KeyError</a>
-          <a href="errores/attribute_error.html">AttributeError</a>
-          <a href="errores/name_error.html">NameError</a>
-        </div>
-
+      <div class="exercise-gallery">
+        <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema2/capturas/error_list_index.png" alt="Captura del ejercicio">
+        <img src="https://raw.githubusercontent.com/DACAREx/prog2526/main/tema2/capturas/error_list_index_solucion.png" alt="Solución del ejercicio">
       </div>
+
+      <a href="../scripts/error_list_index.py" download class="btn download-btn">⬇ Descargar código</a>
+
+      <p class="back-link"><a href="../tema2.html">⬅ Volver al Tema 2</a></p>
+
     </div>
-  </section>
+  </main>
 
   <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 David Carrero Real. Todos los derechos reservados.</p>
       <p>
-        Sígueme en <a href="https://github.com/DACAREx" target="_blank">GitHub</a> |
-        <a href="#">LinkedIn</a>
+        Sígueme en 
+        <a href="https://github.com/DACAREx" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/dacare-xd-464a31390" target="_blank">LinkedIn</a>
       </p>
     </div>
   </footer>
+
 </body>
 </html>
