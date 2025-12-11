@@ -10,3 +10,4 @@ public class Ejercicio4 {
         System.out.println("Tu tienes " + edad + " annos.");
     }
 }
+
