@@ -2,7 +2,7 @@ package progud8;
 
 import java.util.ArrayList;
 
-public class Main {
+public class Ejercicio4 {
     public static void main(String[] args) {
 
         String[] datos = {"7.5", "4.2", "9.0", "3.8", "6.5"};
