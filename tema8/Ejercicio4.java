@@ -10,7 +10,7 @@ public class Ejercicio4 {
         ArrayList<Double> notas = new ArrayList<>();
 
         for (String d : datos) {
-            notas.add(Double.parseDouble(d));
+            notas.add(Double.valueOf(d));
         }
 
         double suma = 0;
